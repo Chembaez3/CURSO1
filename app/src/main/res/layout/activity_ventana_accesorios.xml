@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.luisfernando.curso1.ventana_accesorios">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:background="@drawable/bici"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:background="@drawable/antifaz"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignLeft="@+id/estereo"
+        android:layout_alignStart="@+id/estereo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasumecha"
+        android:background="@drawable/techo"
+        android:layout_above="@+id/imageView7"
+        android:layout_alignLeft="@+id/techo"
+        android:layout_alignStart="@+id/techo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/estereo"
+        android:layout_below="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp"
+        android:background="@drawable/escape"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rack de Bicicleta"
+        android:id="@+id/bici"
+        android:checked="false"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="antifaz"
+        android:id="@+id/antifaz"
+        android:checked="false"
+        android:layout_above="@+id/imageView5"
+        android:layout_toRightOf="@+id/estereo"
+        android:layout_toEndOf="@+id/estereo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barras en Toldo"
+        android:id="@+id/techo"
+        android:layout_alignBottom="@+id/antifaz"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de audio "
+        android:id="@+id/estereo"
+        android:checked="false"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escape Cromado"
+        android:id="@+id/escape"
+        android:checked="false"
+        android:layout_alignTop="@+id/estereo"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignStart="@+id/imageView8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listo"
+        android:layout_marginBottom="62dp"
+        android:onClick="actualizadorLista"
+        android:background="@drawable/agregaro"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignRight="@+id/bici"
+        android:layout_alignEnd="@+id/bici" />
+
+</RelativeLayout>
